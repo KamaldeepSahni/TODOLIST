@@ -1,0 +1,191 @@
+/**********************************************
+*** GENERAL
+**********************************************/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(22, 21, 21);
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    color: #fff;
+    font-family: Open Sans;
+    font-size: 16px;
+    position: relative;
+    height: 100vh;
+    font-weight: 400;
+}
+
+*:focus {outline: none;}
+
+.red { color: #FF5049 !important; }
+.green { color: #1cd425 !important; }
+
+
+/**********************************************
+*** TOP PART
+**********************************************/
+
+.display {
+    font-weight: 600;
+    font-size: 350%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.display .text-primary{
+    color: #375a7f;
+}
+
+.form-group {
+    text-align: left;
+    font-size: 120%;
+    font-weight: 400;
+    padding-top: 5px;
+}
+
+.form-group label {
+    margin-left: 15px;
+}
+
+.form-control {
+    width: 950px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.form-control-number {
+    width: 950px;
+    height: 30px;
+    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.btn-block {
+    width: 950px;
+    height: 30px;
+    background-color: #444;
+    margin-left: 15px;
+    margin-top: 25px;
+    color: #fff;
+    border-radius: 5px;
+}
+
+
+/**********************************************
+*** Tasks
+**********************************************/
+
+
+.container {
+    width: 1000px;
+    margin: 60px auto;
+}
+
+.tasks {
+    float: left;
+    width: 100%;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.task__title {color: #375a7f;}
+
+.item {
+    padding: 13px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.item:first-child { border-top: 1px solid #e7e7e7; }
+.item:nth-child(even) { background-color:  rgb(22, 21, 21); }
+
+.item__description {
+    float: left;
+}
+
+.item__number {
+    float: right;
+    font-size: 120%;
+    transition: transform 0.3s;
+}
+
+.item__delete,
+.item__complete {
+    float: right;
+}
+
+.item__delete--btn,
+.item__complete--btn {
+    font-size: 22px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    margin-right: 10px;
+    display: none;
+}
+
+.item__delete--btn:focus,
+.item__complete--btn:focus { outline: none; }
+.item__delete--btn:active,
+.item__complete--btn:active { transform: translateY(2px); }
+
+.item:hover .item__delete--btn,
+.item:hover .item__complete--btn { display: block; }
+.item:hover .item__number { transform: translateX(-150px); }
+
+.complete {
+    text-decoration: line-through;
+}
+
+.alert-danger {
+    color: #fff;
+    background-color: #e24230;
+    height: 40px;
+    width: 70%;
+    margin-left: 15%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+}
+
+.alert-success {
+    color: #fff;
+    background-color: #00bc8c;
+    height: 40px;
+    width: 70%;
+    margin-left: 15%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+}
+
+.alert-info {
+    color: #fff;
+    background-color: #3498db;
+    height: 40px;
+    width: 70%;
+    margin-left: 15%;
+    box-sizing: border-box;
+    padding: 8px 10px;
+}
